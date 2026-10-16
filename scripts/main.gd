@@ -9,7 +9,7 @@ func _ready() -> void:
 func _on_crystal_collected() -> void:
 	# El cristal ya validó y actualizó la misión antes de emitir la señal.
 	update_crystal_label()
-
+#holaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 func update_crystal_label() -> void:
 	var progress := "Crystals: %d / %d" % [
 		QuestManager.collected_crystals, QuestManager.required_crystals

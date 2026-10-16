@@ -1138,6 +1138,7 @@ tile_map_data = PackedByteArray("AAACAP//AwAKAAAAAAACAAAAAwAKAAEAAAACAAEAAwAKAAI
 tile_set = SubResource("TileSet_5aq51")
 
 [node name="walls2" parent="." unique_id=441900721 instance=ExtResource("4_jyhfs")]
+position = Vector2(2, 5)
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=1886857374]
 navigation_polygon = SubResource("NavigationPolygon_82bq7")
