@@ -1,0 +1,27 @@
+GUARDIANES DEL CRISTAL - MISIÓN Y DIÁLOGOS
+
+Abre project.godot en Godot 4.7 (versión indicada por el proyecto original) y pulsa F6 sobre main.tscn o F5.
+Movimiento: WASD o flechas. Interactuar con Han Solo: E. Ataque: espacio.
+Todos los textos del juego están en inglés.
+Pulsa E cerca de Han Solo para hablar; pulsa E de nuevo para cada mensaje y para cerrar el último.
+También puedes hacer clic en Continue [E].
+
+Cambios:
+- Antes de hablar con Han Solo, los cristales no cuentan ni desaparecen.
+- E cerca del NPC activa la misión de recoger 3 cristales.
+- Cada cristal consulta QuestManager.collect_crystal() antes de desaparecer.
+- El HUD usa el mismo contador que la misión, sin sumar dos veces.
+- body_entered habilita la interacción solo para el jugador.
+- body_exited deshabilita la interacción y cierra el diálogo.
+- Se respetan las conexiones ya presentes en npc.tscn, evitando duplicarlas.
+- El cuadro muestra la primera línea y las siguientes, con mensajes para cada estado.
+- Con 3 cristales, vuelve al NPC y pulsa E para entregar y completar la misión.
+
+Comprobación manual:
+1. Toca un cristal antes de la misión: debe permanecer y el contador seguir en 0.
+2. Acércate al NPC y pulsa E: deben aparecer los mensajes y activarse la misión.
+3. Sal del área: se cierra el cuadro; E lejos no abre conversación.
+4. Recoge los 3 cristales: cada uno suma una vez y desaparece.
+5. Habla con el NPC: se muestra la entrega y la misión completada.
+
+No se incluye el ejecutable antiguo de Windows: abre el proyecto para ejecutar los cambios.
