@@ -21,7 +21,7 @@ func interact() -> void:
 		return
 	match QuestManager.quest_state:
 		QuestManager.QuestState.NOT_STARTED:
-			dialogue_ui.show_dialogue(" liam Solo", [
+			dialogue_ui.show_dialogue(" jam Solo", [
 				"I need your help! The guards are protecting the crystals.",
 				"Collect %d crystals and return to me to deliver them." % QuestManager.required_crystals,
 				"Quest started: you can now collect the crystals."
